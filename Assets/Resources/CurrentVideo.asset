@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5eb002bb87611a409525e43127164a1, type: 3}
+  m_Name: CurrentVideo
+  m_EditorClassIdentifier: 
+  aspectRatio: 1
+  packing: 5
+  mapping: 3
+  mode: 1
+  reference: 0
+  volumetricPlayback: 0
+  preprocessed: 1
+  lastTime: 0
+  path: https://d1mkz1fl1j70df.cloudfront.net/Videos/parrots.mp4
+  format: 0
+  opacity: 7.92
+  holoWidth: 0.35
+  holoCenter: 0.74
+  holoSmoothing: 0.03
+  holoFocus: 0
+  Exposition: 7
+  Contrast: 7
+  Saturation: 7
+  flipHorizontal: 0
+  flipVertical: 0
+  offsetHorizontal: 0
+  offsetVertical: 0
+  zoom: 0
+  depth: 0.7
+  edgeSens: 1
+  baseline: 7
+  swap: 0
+  volume: 10
+  gaussianFrame: 1

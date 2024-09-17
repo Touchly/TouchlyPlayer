@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Steam/MainMenu.unity
+    guid: d90671e953b6c614da086234235f272c
+  - enabled: 0
+    path: Assets/Scenes/Steam/Classic.unity
+    guid: 27751d6d88788504e882acdafd077d60
+  - enabled: 0
+    path: Assets/Scenes/Steam/Dynamic_interaction.unity
+    guid: 53b2a41c8da07084aa516b36477198d9
+  - enabled: 0
+    path: Assets/Scenes/Steam/Hologram_Interaction.unity
+    guid: 869834f0bc4e23343901dd0b967ec38e
+  - enabled: 0
+    path: Assets/Scenes/Steam/Static_Interaction.unity
+    guid: f62d3629a3ffb89429c7ce6a4c39cd85
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a31d0d1b0edca47f4af3cfdab0e32638, type: 2}
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 96cde19b1c318ab4caeed9d6cc234fb1, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6a52a37b526aab447899de58dbce946b, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: a9e4a4e2181d3404eb7359e99ad516ec, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 17a10c656ba4c44969696b8563e330e9, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b74ac2ed6e1eb8241a68f8d9902b953e, type: 2}
