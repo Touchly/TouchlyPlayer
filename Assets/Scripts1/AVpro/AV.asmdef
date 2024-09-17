@@ -1,0 +1,18 @@
+{
+    "name": "AV",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3ca842002c51d0a43b73e45298809a13",
+        "GUID:865ac0603d525dd45b1beca3ad048896",
+        "GUID:828031f1ccc55c14ea38941d12de2c03"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
