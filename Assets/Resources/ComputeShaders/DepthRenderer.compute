@@ -1,0 +1,26 @@
+// 
+//  Meet
+//  Copyright (c) 2022 NatML Inc. All Rights Reserved.
+//
+
+#pragma kernel CSMain
+
+StructuredBuffer<float> Map;
+RWTexture2D<float> Result;
+
+[numthreads(16, 16, 1)]
+void CSMain (uint3 id : SV_DispatchThreadID) {
+    // Check
+    uint width, height;
+    Result.GetDimensions(width, height);
+    if (id.x * id.y >= width * height)
+        return;
+    
+    //float limit = (1-step(7*width/8, id.x))*step(width/8, id.x); //Baseline area > Black
+    // CREStereo
+    float p = Map[id.x + width * (height - id.y - 1)]/35;
+    
+    float limit = (1-step(7*width/8, id.x))*step(width/8, id.x); //Baseline area > Black
+    
+    Result[id.xy] = limit*float4(p, p, p, 1.0);
+}

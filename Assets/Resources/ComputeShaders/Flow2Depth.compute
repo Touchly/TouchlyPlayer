@@ -1,0 +1,30 @@
+#pragma kernel CSMain
+
+//RWTexture2D<float4> In;
+Texture2D<float4> In;
+RWTexture2D<float4> Result;
+
+#define PI    3.141592653589793
+#define TWOPI 6.283185307179587
+#define HPI   1.570796326794896
+#define QPI   4.712388980384689
+#define baseline 0.065
+
+[numthreads(16, 16, 1)]
+void CSMain (uint3 id : SV_DispatchThreadID) {
+    uint rows, cols;
+    Result.GetDimensions(cols, rows);
+    if (id.x * id.y >= rows * cols)
+        return;
+
+    //One dim only.
+    float u = In[id.xy].y;
+
+    float phi_left = PI * ((float)cols - (float)id.x - 0.5)/cols; // 0, PI
+    float delta =  (u * PI) / cols;
+    float d = baseline * (sin(phi_left + delta)) / (sin(delta));//
+    float value = 11.5/(d);
+
+    //value, correct depth
+    Result[id.xy] = float4(value,value,value,1);
+}
